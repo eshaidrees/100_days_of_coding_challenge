@@ -1,5 +1,6 @@
+"use strict";
 // lower case
-var personName = "Anaya";
+let personName = "Anaya";
 console.log("lowercase:", personName.toLowerCase());
 // upper case
 console.log("uppercase:", personName.toUpperCase());
