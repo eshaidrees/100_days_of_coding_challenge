@@ -1,0 +1,4 @@
+"use strict";
+// Calculate and log the absolute difference between the number -5 and 5.
+let absoluteDifference = Math.abs(-5 - 5);
+console.log(absoluteDifference); //Output: 10
