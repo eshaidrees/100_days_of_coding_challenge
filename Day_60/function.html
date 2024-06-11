@@ -1,0 +1,74 @@
+</html>
+<head>
+    <title>My HTML page</title>
+</head>
+<body>
+    <script>
+        // Task 1
+        // The following function returns true if the parameter age is greater than 18.
+
+        function checkAge(age) {
+          if (age > 18){
+            return true
+          }else{
+            return confirm('Did parents allow you?');
+          }
+        }  
+        // Will the function work differently if else is removed?
+        function checkAge(age) {
+          if (age > 18){
+              return true
+          }
+             return confirm('Did parents allow you?');
+        }
+         // No function not work differently work same
+         // In both cases, return confirm('Did parents allow you?') executes when the if condition is falsy.
+
+        // Task 2
+        // Rewrite the function using '?' or '||'
+
+        // Using '?'
+        function checkAge(age) {
+            return (age > 18) ? true : confirm('Did parents allow you?');
+        }
+        // Using '||'
+        function checkAge(age) {
+            return (age > 18) || confirm('Did parents allow you?');
+        }
+
+        // Task 3
+        
+        function min(a, b) {
+          if (a < b) {
+            return a;
+          } else {
+             return b;
+            }
+        }
+        
+        // Task 4
+
+        function pow(x,n){
+            let result = x;
+            for (let i = 1; i < n; i++) {
+                 result *= x;
+             }
+             return result;
+        }
+
+       let x = prompt("x?", '');
+       let n = prompt("n?", '');
+
+       if (n < 1) {
+        alert(`Power ${n} is not supported, use a positive integer`);
+       } else {
+        alert(pow(x,n))
+       }
+
+
+
+      
+    </script>
+    
+</body>
+</html>

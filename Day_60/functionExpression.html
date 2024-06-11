@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> My HTML page</title>
+    </head>
+    <body>
+        <script>
+
+        function sayHi() {
+           alert( "Hello" );
+        }
+
+        alert(sayHi); 
+
+
+        function sayHi() {   // (1) create
+          alert( "Hello" );
+        }
+
+        let func = sayHi;    // (2) copy
+
+         func(); // Hello     // (3) run the copy (it works)!
+         sayHi() // Hello    //     this still works too (why wouldn't it)
+
+         // Callback Function //
+
+         function ask(question, yes, no) {
+           if (confirm(question)) yes()
+            else no();
+        }
+
+         ask(         
+              "Do you agree?",
+               function() { alert("You agreed."); },
+               function() { alert("You canceled the execution."); }
+            );
+
+        // Function Expression vs Function Declaration //
+        // Function Declaration 
+        sayhi("John"); // Hello, John
+
+        function sayhi(name) {
+           alert( `Hello, ${name}` );
+        }
+         // Function Expression
+        sayhi("Jhon");
+
+        let sayhi = function(name){
+            alert( `Hello, ${name}` );
+        }
+
+        </script>
+    </body>
+</html>
