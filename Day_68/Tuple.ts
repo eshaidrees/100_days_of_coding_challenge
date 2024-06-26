@@ -10,7 +10,6 @@ article = [12, "Title Two", false];
 // Trying to push a new element into a tuple (will result in an error)
 //article.push(100)
 
-
 // Destructuring the tuple into individual variables
 const [id, title, published] = article;
 console.log(id);
